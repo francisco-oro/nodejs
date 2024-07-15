@@ -1,0 +1,9 @@
+services:
+  node:
+    build:
+      dockerfile: node.Dockerfile
+    entrypoint: ["npm"]
+    volumes:
+      - ./:/app
+    ports:
+      - "1234:1234"
